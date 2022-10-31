@@ -51,7 +51,7 @@
 		url('../fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/MuseoSansCyrl-700.woff') format('woff'),
 		url('../fonts/MuseoSansCyrl-700.ttf') format('truetype');
-	font-weight: normal;
+	font-weight: 700;
 	font-style: normal;
 }
 
