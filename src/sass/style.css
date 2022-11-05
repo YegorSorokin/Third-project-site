@@ -348,9 +348,7 @@
 }
 .catalog__content {
 		margin-top: 60px;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
+		display: none;
 		-webkit-box-pack: justify;
 		    -ms-flex-pack: justify;
 		        justify-content: space-between;
@@ -503,5 +501,77 @@
 }
 .catalog-item__back:hover {
 		color: #C70101;
+}
+
+.reviews {
+		padding-bottom: 82px;
+}
+.reviews__block {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		margin-top: 60px;
+}
+.reviews__img {
+		width: 169px;
+		height: 169px;
+}
+.reviews__descr {
+		margin-left: 60px;
+}
+.reviews__descr_header {
+		color: #0d0d0d;
+		font-size: 18px;
+		font-family: "Museo Sans Cyrl", sans-serif;
+		font-weight: 700;
+}
+.reviews__descr_subheader {
+		color: #646464;
+		font-size: 14px;
+		font-family: "Museo Sans Cyrl", sans-serif;
+		font-weight: 500;
+}
+.reviews__descr_text {
+		color: #0d0d0d;
+		font-size: 16px;
+		font-family: "Museo Sans Cyrl", sans-serif;
+		font-weight: 300;
+		margin-top: 10px;
+}
+
+.footer {
+		min-height: 630px;
+		position: relative;
+}
+.footer__info {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
+		width: 460px;
+		height: 270px;
+		background-color: #C70101;
+		padding: 50px 68px 60px 68px;
+}
+.footer__addrs {
+		text-align: center;
+		color: #fff;
+		font-family: "Museo Sans Cyrl", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+}
+.footer__phone {
+		text-align: center;
+		margin-top: 36px;
+		color: #fff;
+		font-family: "Museo Sans Cyrl", sans-serif;
+		font-weight: 700;
+		font-size: 20px;
+		text-decoration: none;
+}
+.footer__phone:hover {
+		color: #fff;
+		text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

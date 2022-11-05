@@ -1,0 +1,34 @@
+.reviews {
+    padding-bottom: 82px;
+    &__block {
+        display: flex;
+        margin-top: 60px;
+    }
+    &__img {
+        width: 169px;
+        height: 169px;
+    }
+    &__descr {
+        margin-left: 60px;
+        &_header {
+            color: #0d0d0d;
+            font-size: 18px;
+            font-family: 'Museo Sans Cyrl', sans-serif;
+            font-weight: 700;
+        }
+        &_subheader {
+            color: #646464;
+            font-size: 14px;
+            font-family: 'Museo Sans Cyrl', sans-serif;
+            font-weight: 500;
+        }
+        &_text {
+            color: #0d0d0d;
+            font-size: 16px;
+            font-family: 'Museo Sans Cyrl', sans-serif;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+    }
+    
+}
