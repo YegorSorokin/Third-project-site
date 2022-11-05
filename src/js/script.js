@@ -39,4 +39,31 @@ $(document).ready(function() {
             $('.overlay, #order').fadeIn('slow');
         });
     });
+
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "Пожалуйста, введите своё имя",
+                phone: "Введите номер телефона",
+                email: {
+                  required: "Пожалуйста, введите свою почту",
+                  email: "Адрес должен быть в формате пример@почта.сom"
+                }
+            }
+        });
+    };
+
+    validateForms('#order form');
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
 });
