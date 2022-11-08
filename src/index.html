@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <div class="header">
                 <a href="#" class="header__logo">
@@ -80,7 +81,7 @@
                 </div>
                 <div class="benefits_item">
                     <div class="benefit_icon">
-                        <img src="icons/heart.png" alt="heart">
+                        <img src="icons/heart.png" alt="heart" class="heart benefits__icon benefits__icon_animated">
                     </div>
                     <div class="benefits_descr">
                         <h2 class="benefits_descr_header">Заботимся о здоровье</h2>
@@ -125,7 +126,7 @@
         </div>
     </section>
 
-    <section class="carousel">
+    <div class="carousel">
         <div class="container">
             <div class="carousel__inner">
                 <div>
@@ -139,7 +140,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <section class="catalog">
         <div class="container">
@@ -172,6 +173,7 @@
                             </li>
                             <a href="#" class="catalog-item__back">назад</a>
                         </ul>
+                        
                     </div>
                     <hr>
 
@@ -454,7 +456,7 @@
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
 
-            <div class="reviews__block">
+            <div class="reviews__block animate__animated animate__fadeInUp wow">
                 <img src="img/photo_1.png" alt="photo" class="reviews__img">
                 <div class="reviews__descr">
                     <div class="reviews__descr_header">Ирина Иванченко</div>
@@ -466,7 +468,7 @@
                     </div>
                 </div>
             </div>
-            <div class="reviews__block">
+            <div class="reviews__block animate__animated animate__fadeInUp wow">
                 <img src="img/photo_2.png" alt="photo" class="reviews__img">
                 <div class="reviews__descr">
                     <div class="reviews__descr_header">Иван Сёмочкин</div>
@@ -478,7 +480,7 @@
                     </div>
                 </div>
             </div>
-            <div class="reviews__block">
+            <div class="reviews__block animate__animated animate__fadeInUp wow">
                 <img src="img/photo_3.png" alt="photo" class="reviews__img">
                 <div class="reviews__descr">
                     <div class="reviews__descr_header">Юлия Дашкина</div>
@@ -542,9 +544,15 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <a href="#up" class="pageup" >
+        <img src="icons/circle-chevron-up-solid.svg" alt="up">
+    </a>
+    
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
